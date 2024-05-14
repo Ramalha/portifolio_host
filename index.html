@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/52951c213d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--------------------------------[Título]-------------------------------->
+
+    <div id="header">
+        <div class="conteiner">
+            <nav>
+            <img src="images/logo-1.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#portfolio">Portifolio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Computer Scientist</p>
+                <h1><span>Lucas Ramos</span><br> <i class="fa-solid fa-location-dot"></i> São Paulo, Brasil</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------[Sobre]-------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre Mim</h1>
+                    <p>Olá! Sou Lucas Carvalho dos Ramos, tenho 18 anos programando desde 2020. Sou um desenvolvedor Full Stack, especializado tanto em back end quanto em front end. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('exp')">Experiência</p>
+                        <p class="tab-links" onclick="opentab('edu')">Educação</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Comuter Science</span><br>Desenvolvimento Front-end/Back-end</li>
+                            <li><span>Game Development</span><br>Jogos 2D</li>
+                            <li><span>UI/UX</span><br>Designing Web/app interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exp">
+                        <ul>
+                            <li><span>2024 - Atual</span><br>Estudando C#/HTML-CSS-JavaScript</li>
+                            <li><span>2023</span><br>Febrace - Algoritimo de converção da frequência das cores em Frequência em hz uzando Python</li>
+                            <li><span>2025* - Esperado</span><br>Estudando Ciência da Computação INTELI/INSPER/ESPM-Tech</li>
+                            <li><span>[ *none* ]</span><br>Sem Experiência Profissional até o Momento</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>2024</span><br>Ecola Lourenço Castanho São Paulo, Brasil</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------[Serviços]-------------------------------->
+
+    <div id="services">
+        <div class="conteiner">
+            <h1 class="sub-title">Meus Serviços</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2 id="sv">Game Development</h2>
+                    <p>Desenvolvedor de jogos com experiência em Unity, Godot e Game Maker. Proficiente em C# e GDScript.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-alt"></i>
+                    <h2 id="sv">Web Disign</h2>
+                    <p>Designer web com experiência em várias ferramentas e tecnologias, incluindo HTML, CSS e JavaScript.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2 id="sv">Desenvolvimento Back-end</h2>
+                    <p>Desenvolvedor backend com experiência em diversas tecnologias, como Node.js, Python e Java.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------[Portifolio]-------------------------------->
+
+    <div id="portfolio">
+        <div class="conteiner">
+            <h1 class="sub-title">Meus Projetos</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Xadrez no terminal</h3>
+                        <p>Com Python jogue xadrez mesmo sem internet com um amigo!</p>
+                        <a href="https://github.com/Ramalha/xadrez_terminal" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>Conversor de Imagem Em Música</h3>
+                        <p>Já pensou em como seria escutar uma música única feita apartir de uma imagem? descubra agora o som das suas imagens preferidas.</p>
+                        <a href="https://github.com/Ramalha/conver-o_imagem_em_som_py" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png">
+                    <div class="layer">
+                        <h3>Jogo Tetris</h3>
+                        <p>Uma simples recriação do jogo de blocos mundialmente conhecido da Nintendo.</p>
+                        <a href="https://github.com/Ramalha/tetris_inspiration" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+                <div></div><a href="#" class="btn" id="saiba_mais_link">Veja Mais</a>
+                <span id="saiba_mais_msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------[Contato]-------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> lucasc.ramos27@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +55 (11) 961622709</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/lucasc.ramos_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="afazeres.html" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="afazeres.html" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="afazeres.html" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Ramalha/Main_github/tree/main" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/nop_curriculo_1.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Seu Nome" required>
+                        <input type="email" name="Email" placeholder="Seu Email" required>
+                        <textarea name="Message" rows="6" placeholder="Sua Mensagem" ></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Lucas. feito com <i class="fas fa-heart"></i> por Lucas C. Ramos</p>
+        </div>
+    </div>
+
+    <!--------------------------------[JavaScript]-------------------------------->
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+            for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzBp7EKtkkdOyb_zFXHa3-gVvmm4w2UkEPxd4LEAdanp9mZVDP6oT6YXBlDtaSpz8zO-g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Mensagem enviada com sucesso"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+    document.getElementById("saiba_mais_link").addEventListener("click", function(event) {
+        event.preventDefault(); 
+        
+        var saibaMaisMsg = document.getElementById("saiba_mais_msg");
+        
+        saibaMaisMsg.textContent = "Em andamento";
+        
+        setTimeout(function() {
+            saibaMaisMsg.textContent = ""; 
+        }, 3000);
+    });
+</script>
+
+</body>
+</html>
